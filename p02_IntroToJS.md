@@ -60,8 +60,8 @@ En el programa observe los siguientes aspectos:
 * El comentario de cabecera del fichero explica varias cuestiones relativas al programa.
 * La sentencia `use strict;`. Se incluirá en todos los programas JS que realice. Estudie esa sentencia en el
 [tutorial de referencia de la asignatura](https://javascript.info/strict-mode#use-strict).
-* La sentencia `require` se utiliza para cargar un módulo (en este caso un módulo *CommonJS*). Estudie lo que
-  los módulos en el
+* La sentencia `require` se utiliza para cargar un módulo (en este caso un módulo *CommonJS*). Estudie 
+  los módulos de JS en el
 [Capítulo 10 de Eloquent JavaScript](https://eloquentjavascript.net/10_modules.html). Inicialmente se
 trabajará con módulos *CommonJS* y más adelante se usarán en la asignatura los *ES modules*.
 La dependencia de este programa con respecto a ese módulo se indica en el fichero `package.json` que se
@@ -74,7 +74,7 @@ para conocer la finalidad y estructura de ese fichero.
 * En JS la función "de entrada" de un programa no tiene porqué llamarse *main()*.
 Aquí se ha usado ese nombre por seguir la tradición, pero puede cambiar el nombre de esa función de entrada.
 La comprobación `require.nain === module` (que no está disponible para módulos ES) se utiliza en este programa
-para indicar que el mismo se va a ejecutar directamente desde *Node.js*
+para indicar que el mismo se va a ejecutar directamente desde *Node.js* (y no en un navegador).
 * El código del programa cumple los requisitos de estilo que se utilizan en PAI.
 
 ### Guía de Estilo
@@ -85,14 +85,15 @@ estudiado aún.
 Preste particular atención a los siguientes aspectos:
 * [Reglas](https://google.github.io/styleguide/jsguide.html#naming-rules-common-to-all-identifiers)
   para nombres (identificadores) de diferente tipología (constantes, variables, parámetros, funciones, ...).
-  En particular, nunca se utilizarán identificadores "de una sola letra" salvo, tal vez, en contadas
-  excepciones (contador en un bucle).
+  *Todos* los identificadores que utilice en sus programas han de ser significativos y
+  en particular, nunca se utilizarán identificadores "de una sola letra" salvo, tal vez, de forma excepcional
+  (contador en un bucle).
 * [Formateo](https://google.github.io/styleguide/jsguide.html#formatting) del código
 * Utilización de los
   [espacios en blanco](https://google.github.io/styleguide/jsguide.html#formatting-horizontal-whitespace)
 * Comentarios de ["cabecera"](https://google.github.io/styleguide/jsguide.html#jsdoc-top-file-level-comments) para sus programas. 
-Esa guía de estilo es la que se utilizará en la asignatura y la conformidad de todos los programas presentados 
-como prácticas es un requisito en la evaluación de los mismos.
+Esa guía de estilo (junto en el futuro con la de TypeScript) es la de referencia en la asignatura y la 
+conformidad de todos los programas presentados como prácticas es un requisito en la evaluación de los mismos.
 
 ### Comentarios de cabecera
 Una buena práctica en el ámbito de la documentación del código consiste en incluir un bloque de comentarios al comienzo
