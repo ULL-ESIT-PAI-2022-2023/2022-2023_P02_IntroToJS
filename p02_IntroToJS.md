@@ -13,15 +13,15 @@ Se señalan a continuación los aspectos más relevantes (la lista no es exhaust
 que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará la realización de las diferentes tareas que se proponen
 * El alumnado ha de acreditar que es capaz de resolver problemas de la plataforma Jutge
-* Se comprobará que el código que el alumnado escribe se adhiere a las reglas de la Guía de Estilo que se
-  usará en la asignatura
+* Se comprobará que el código que el alumnado escribe se adhiere a las reglas de la guía de estilo de
+  referencia en la asignatura
 * Todas las prácticas realizadas hasta la fecha, incluída la que se presenta para su evaluación, se encuentran 
-  alojadas en repositorios privados de GitHub.
+  alojadas en repositorios privados de GitHub
 * El alumnado ha de acreditar que es capaz de editar ficheros de forma remota en su VM usando Visual Studio
   Code (VSC)
 
 ### Jutge
-Cuando se inscriba Ud. en el curso `PAI - 2021-2022` de 
+Cuando se inscriba Ud. en el curso `PAI - 2022-2023` de 
 [Jutge](https://jutge.org/),
 hallará una lista de problemas de programación de diferente dificultad.
 
@@ -41,12 +41,14 @@ de Jutge.
 
 Utilice ese programa como ejemplo de cómo debieran ser los programas que desarrollará en PAI.
 
-Para ejecutarlo, comience por ejecutar:
+Para ejecutarlo, comience por instalar los paquetes necesarios en su proyecto:
 
 ```
 $ npm install
 ```
-en el directorio base de su proyecto y a continuación ejecute el programa utilizando `node`:
+en el directorio base de su proyecto y observe el efecto de la ejecución del comando anterior.
+
+A continuación ejecute el programa utilizando `node`:
 
 ```
 node first-numbers-P37500.js
