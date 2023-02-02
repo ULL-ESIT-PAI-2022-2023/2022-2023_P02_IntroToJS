@@ -1,21 +1,22 @@
-# Práctica 2. Programas simples.
+# Práctica 2. Introducción a JavaScript.
 ### Factor de ponderación: 4
 
 ### Objetivos
 Los objetivos de esta práctica son:
 * Ser capaz de realizar programas simples en JavaScript en el entorno Linux de la VM de la asignatura usando
   Node.js
-* Conocer y saber utilizar la plataforma Jutge para resolver problemas de programación
+* Conocer la plataforma Jutge para utilizarla como fuente de ejercicios de programación
 * Conocer y poner en práctica las recomendaciones de la Guía de Estilo de Google para JavaScript
 
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará la realización de las diferentes tareas que se proponen
-* El alumnado ha de acreditar que es capaz de desarrollar y ejecutar programas simples de la plataforma Jutge
+* El alumnado ha de acreditar que es capaz de resolver problemas de la plataforma Jutge
 * Se comprobará que el código que el alumnado escribe se adhiere a las reglas de la Guía de Estilo que se
   usará en la asignatura
-* Todas las prácticas realizadas hasta la fecha, incluída la que se presenta para su evaluación, se encuentran alojadas en repositorios privados de GitHub.
+* Todas las prácticas realizadas hasta la fecha, incluída la que se presenta para su evaluación, se encuentran 
+  alojadas en repositorios privados de GitHub.
 * El alumnado ha de acreditar que es capaz de editar ficheros de forma remota en su VM usando Visual Studio
   Code (VSC)
 
@@ -45,7 +46,28 @@ Para ejecutarlo, comience por ejecutar:
 ```
 $ npm install
 ```
-en el directorio base de su proyecto y a continuación ejecute el programa utilizando `node`.
+en el directorio base de su proyecto y a continuación ejecute el programa utilizando `node`:
+
+```
+node first-numbers-P37500.js
+```
+
+En el programa observe los siguientes aspectos:
+* El nombre que se le ha puesto al fichero del programa: es un nombre descriptivo.
+* El comentario de cabecera del fichero explica varias cuestiones relativas al programa.
+* La sentencia `use strict;`. Se incluirá en todos los programas JS que realice. Estudie esa sentencia en el
+[tutorial de referencia de la asignatura](https://javascript.info/strict-mode#use-strict).
+* La sentencia `require` se utiliza para cargar un módulo (en este caso un módulo *CommonJS*). Estudie lo que
+  los módulos en el
+[Capítulo 10 de Eloquent JavaScript](https://eloquentjavascript.net/10_modules.html). Inicialmente se
+trabajará con módulos *CommonJS* y más adelante se usarán en la asignatura los *ES modules*.
+* Todas las sentencias de código del programa se encuentran encapsuladas (incluídas) en diferentes funciones.
+  De este mismo modo se deberá proceder en todos los programas que se diseñen en la asignatura.
+* En JS la función "de entrada" de un programa no tiene porqué llamarse *main()*.
+Aquí se ha usado ese nombre por seguir la tradición, pero puede cambiar el nombre de esa función de entrada.
+La comprobación `require.nain === module` (que no está disponible para módulos ES) se utiliza en este programa
+para indicar que el mismo se va a ejecutar directamente desde *Node.js*
+* El código del programa cumple los requisitos de estilo que se utilizan en PAI.
 
 ### Guía de Estilo
 Los programas que escriba han de seguir **fielmente** todas las indicaciones de la 
@@ -55,13 +77,14 @@ estudiado aún.
 Preste particular atención a los siguientes aspectos:
 * [Reglas](https://google.github.io/styleguide/jsguide.html#naming-rules-common-to-all-identifiers)
   para nombres (identificadores) de diferente tipología (constantes, variables, parámetros, funciones, ...).
-  En particular, no se han de usar identificadores "de una sola letra" salvo, tal vez, en contadas
-  excepciones (iteradores en un bucle).
+  En particular, nunca se utilizarán identificadores "de una sola letra" salvo, tal vez, en contadas
+  excepciones (contador en un bucle).
 * [Formateo](https://google.github.io/styleguide/jsguide.html#formatting) del código
 * Utilización de los
   [espacios en blanco](https://google.github.io/styleguide/jsguide.html#formatting-horizontal-whitespace)
 * Comentarios de ["cabecera"](https://google.github.io/styleguide/jsguide.html#jsdoc-top-file-level-comments) para sus programas. 
-Esa guía de estilo es la que se utilizará en la asignatura y la conformidad de todos los programas presentados como prácticas es un requisito en la evaluación de los mismos.
+Esa guía de estilo es la que se utilizará en la asignatura y la conformidad de todos los programas presentados 
+como prácticas es un requisito en la evaluación de los mismos.
 
 ### Comentarios de cabecera
 Una buena práctica en el ámbito de la documentación del código consiste en incluir un bloque de comentarios al comienzo
@@ -96,7 +119,7 @@ Si fuera necesario se incluirá a continuación una descripción más detallada.
 Obviamente el comentario específico así como el nombre del fichero debieran particularizarse para cada caso
 concreto.
 
-Incluya siempre un bloque de comentarios similar al anterior en todos sus ficheros.
+Incluya siempre un bloque de comentarios similar al anterior en **todos** sus ficheros.
 Preste cuidado a la práctica habitual de "copiar y pegar" estos comentarios de un proyecto a otro, puesto que parte de la
 información cambiará.
 
@@ -124,7 +147,7 @@ Estudie
 para aprender a trabajar con parámetros pasados en línea de comandos a un programa ejecutado con Node.js.
 
 Entre los ejemplos de código que se usan en la asignatura puede hallar
-[este ejemplo](https://github.com/ULL-ESIT-PAI-2021-2022/PAI-class-code-examples/blob/master/src/T1A-IntroJS/command-line-parameters.js)
+[este ejemplo](https://github.com/ULL-ESIT-PAI-2022-2023/PAI-class-code-examples/blob/master/src/T1A-IntroJS/command-line-parameters.js)
 que ilustra cómo pasar parámetros por línea de comandos.
 
 Al igual que se hace en el programa `first-numbers-P37500.js`, organice sus programas en torno a diversas
@@ -149,6 +172,9 @@ Desarrolle programas que solucionen los siguientes problemas:
 
 ### Referencias
 * [JavaScript Fundamentals](https://javascript.info/first-steps)
-* [PAI Code Examples](https://github.com/ULL-ESIT-PAI-2021-2022/PAI-class-code-examples/tree/master/src)
+* [PAI Code Examples](https://github.com/ULL-ESIT-PAI-2022-2023/PAI-class-code-examples/tree/master/src)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 * [Jutge web site](https://jutge.org/)
+* [CommonJS vs ES Modules](https://lenguajejs.com/automatizadores/introduccion/commonjs-vs-es-modules/)
+* [The Modern JavaScript Tutorial](https://javascript.info/)
+* [Eloquent JavaScript](https://eloquentjavascript.net/)
