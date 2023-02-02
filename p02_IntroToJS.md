@@ -41,12 +41,13 @@ de Jutge.
 
 Utilice ese programa como ejemplo de cómo debieran ser los programas que desarrollará en PAI.
 
-Para ejecutarlo, comience por instalar los paquetes necesarios en su proyecto:
+Para ejecutar el programa, comience por instalar en el directorio base de su proyecto los paquetes 
+necesarios:
 
 ```
 $ npm install
 ```
-en el directorio base de su proyecto y observe el efecto de la ejecución del comando anterior.
+y observe el efecto de la ejecución del comando anterior.
 
 A continuación ejecute el programa utilizando `node`:
 
