@@ -61,6 +61,11 @@ En el programa observe los siguientes aspectos:
   los módulos en el
 [Capítulo 10 de Eloquent JavaScript](https://eloquentjavascript.net/10_modules.html). Inicialmente se
 trabajará con módulos *CommonJS* y más adelante se usarán en la asignatura los *ES modules*.
+La dependencia de este programa con respecto a ese módulo se indica en el fichero `package.json` que se
+encuentra en el directorio raíz del proyecto.
+Estudie el artículo
+[El archivo package.json](https://lenguajejs.com/npm/administracion/package-json/) 
+para conocer la finalidad y estructura de ese fichero.
 * Todas las sentencias de código del programa se encuentran encapsuladas (incluídas) en diferentes funciones.
   De este mismo modo se deberá proceder en todos los programas que se diseñen en la asignatura.
 * En JS la función "de entrada" de un programa no tiene porqué llamarse *main()*.
