@@ -88,6 +88,8 @@ Preste particular atención a los siguientes aspectos:
   *Todos* los identificadores que utilice en sus programas han de ser significativos y
   en particular, nunca se utilizarán identificadores "de una sola letra" salvo, tal vez, de forma excepcional
   (contador en un bucle).
+  Siga los consejos que se indican en esta entrada del
+  [Google Testing Blog](https://testing.googleblog.com/2017/10/code-health-identifiernamingpostforworl.html)
 * [Formateo](https://google.github.io/styleguide/jsguide.html#formatting) del código
 * Utilización de los
   [espacios en blanco](https://google.github.io/styleguide/jsguide.html#formatting-horizontal-whitespace)
