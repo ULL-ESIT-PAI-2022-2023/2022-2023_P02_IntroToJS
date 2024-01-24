@@ -2,7 +2,7 @@
   "name": "Introduction to JavaScript",
   "version": "1.0.0",
   "description": "Simple programs in JS",
-  "author": "F. de Samde",
+  "author": "F. de Sande",
   "license": "MIT",
   "dependencies": {
     "readline-sync": "1.4.9"
